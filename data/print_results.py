@@ -75,7 +75,7 @@ def print_results(results_dic, results_stats_dic, model,
     print("Percentage Correct Dogs: {:5.1f}  Percentage Correct Not-Dogs: {:5.1f}  Percentage Correct Breed: {:5.1f}".format(
         results_stats_dic['pct_correct_dogs'], results_stats_dic['pct_correct_notdogs'],
         results_stats_dic['pct_correct_breed']))
-    print("Percentage Match (Doh & Non-Dog): {:5.1f}".format(results_stats_dic['pct_match']))
+    print("Percentage Match (Dog & Non-Dog): {:5.1f}".format(results_stats_dic['pct_match']))
 
     if print_incorrect_dogs and (results_stats_dic['pct_correct_dogs'] != 100.0 or results_stats_dic['pct_correct_notdogs'] != 100.0):
         print("\nINCORRECT Dog Classifications:")
