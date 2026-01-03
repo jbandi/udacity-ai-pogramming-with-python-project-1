@@ -2,20 +2,20 @@
 ## Statistics for Model RESNET ##
 Number of Images: 40  Number of Dog Images: 30  Number of Not-Dog Images: 10
 Percentage Correct Dogs: 100.0  Percentage Correct Not-Dogs:  90.0  Percentage Correct Breed:  90.0
-Percentage Match (Doh & Non-Dog):  82.5
+Percentage Match (Dog & Non-Dog):  82.5
 
 INCORRECT Dog Classifications:
-Real:                        cat   Classifier:   norwegian elkhound, elkhound
-Real:                      gecko   Classifier: african chameleon, chamaeleo chamaeleon
-Real:                     beagle   Classifier:  walker hound, walker foxhound
-Real:                      gecko   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
-Real:           golden retriever   Classifier:                       leonberg
-Real:           great horned owl   Classifier: great grey owl, great gray owl, strix nebulosa
-Real:             great pyrenees   Classifier:                         kuvasz
+Filename:                 cat_01.jpg   Real:                        cat   Classifier:   norwegian elkhound, elkhound
+Filename:               gecko_02.jpg   Real:                      gecko   Classifier: african chameleon, chamaeleo chamaeleon
+Filename:           Beagle_01170.jpg   Real:                     beagle   Classifier:  walker hound, walker foxhound
+Filename:               gecko_80.jpg   Real:                      gecko   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
+Filename: Golden_retriever_05182.jpg   Real:           golden retriever   Classifier:                       leonberg
+Filename:    great_horned_owl_02.jpg   Real:           great horned owl   Classifier: great grey owl, great gray owl, strix nebulosa
+Filename:   Great_pyrenees_05367.jpg   Real:             great pyrenees   Classifier:                         kuvasz
 
 INCORRECT Dog Breed Classifications:
-Real:                     beagle   Classifier:  walker hound, walker foxhound
-Real:           golden retriever   Classifier:                       leonberg
-Real:             great pyrenees   Classifier:                         kuvasz
+Filename:           Beagle_01170.jpg   Real:                     beagle   Classifier:  walker hound, walker foxhound
+Filename: Golden_retriever_05182.jpg   Real:           golden retriever   Classifier:                       leonberg
+Filename:   Great_pyrenees_05367.jpg   Real:             great pyrenees   Classifier:                         kuvasz
 
 ** Total Elapsed Runtime: 0:0:0

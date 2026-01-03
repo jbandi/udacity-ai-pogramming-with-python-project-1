@@ -81,18 +81,18 @@ def print_results(results_dic, results_stats_dic, model,
         print("\nINCORRECT Dog Classifications:")
         for key in results_dic:
             if results_dic[key][2] == 0:
-                print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+                print("Filename: {:>26}   Real: {:>26}   Classifier: {:>30}".format(key, results_dic[key][0], results_dic[key][1]))
 
     if print_incorrect_breed and (results_stats_dic['pct_correct_breed'] != 100.0):
         print("\nINCORRECT Dog Breed Classifications:")
         for key in results_dic:
             if results_dic[key][2] == 0 and results_dic[key][3] == 1:
-                print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+                print("Filename: {:>26}   Real: {:>26}   Classifier: {:>30}".format(key, results_dic[key][0], results_dic[key][1]))
 
     # print("\nINCORRECT Classsifications (Dog & Non-Dog)")
     # for key in results_dic:
     #     if results_dic[key][2] == 0:
-    #         print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+    #         print("Filename: {:>26}   Real: {:>26}   Classifier: {:>30}".format(key, results_dic[key][0], results_dic[key][1]))
 
 
     None

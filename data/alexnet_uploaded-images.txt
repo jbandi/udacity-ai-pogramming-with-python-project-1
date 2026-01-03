@@ -5,6 +5,6 @@ Percentage Correct Dogs: 100.0  Percentage Correct Not-Dogs: 100.0  Percentage C
 Percentage Match (Dog & Non-Dog):  50.0
 
 INCORRECT Dog Breed Classifications:
-Real:                      corgi   Classifier:                      chihuahua
+Filename: Corgi_02.jpg   Real:                      corgi   Classifier:                      chihuahua
 
 ** Total Elapsed Runtime: 0:0:0

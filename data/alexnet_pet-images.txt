@@ -2,14 +2,14 @@
 ## Statistics for Model ALEXNET ##
 Number of Images: 40  Number of Dog Images: 30  Number of Not-Dog Images: 10
 Percentage Correct Dogs: 100.0  Percentage Correct Not-Dogs: 100.0  Percentage Correct Breed:  80.0
-Percentage Match (Doh & Non-Dog):  75.0
+Percentage Match (Dog & Non-Dog):  75.0
 
 INCORRECT Dog Breed Classifications:
-Real:                     beagle   Classifier:  walker hound, walker foxhound
-Real:             boston terrier   Classifier:                        basenji
-Real:                     beagle   Classifier:               english foxhound
-Real:           golden retriever   Classifier:                tibetan mastiff
-Real:             great pyrenees   Classifier:                         kuvasz
-Real:           golden retriever   Classifier:           afghan hound, afghan
+Filename:           Beagle_01170.jpg   Real:                     beagle   Classifier:  walker hound, walker foxhound
+Filename:   Boston_terrier_02285.jpg   Real:             boston terrier   Classifier:                        basenji
+Filename:           Beagle_01141.jpg   Real:                     beagle   Classifier:               english foxhound
+Filename: Golden_retriever_05182.jpg   Real:           golden retriever   Classifier:                tibetan mastiff
+Filename:   Great_pyrenees_05367.jpg   Real:             great pyrenees   Classifier:                         kuvasz
+Filename: Golden_retriever_05257.jpg   Real:           golden retriever   Classifier:           afghan hound, afghan
 
 ** Total Elapsed Runtime: 0:0:0
