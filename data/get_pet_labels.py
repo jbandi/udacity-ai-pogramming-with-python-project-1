@@ -47,13 +47,14 @@ def get_pet_labels(image_dir):
 
     results_dic = dict()
     for idx in range(0, len(filename_list), 1):
-        pet_image = filename_list[idx]
-        if pet_image not in results_dic:
-            low_pet_image = pet_image.lower()
+        file_name = filename_list[idx]
+
+        if not file_name.startswith(".") and file_name not in results_dic:
+            low_pet_image = file_name.lower()
             word_list_pet_image = low_pet_image.split("_")
             pet_label = " ".join([word for word in word_list_pet_image if word.isalpha()])
 
-            results_dic[pet_image] = [pet_label]
+            results_dic[file_name] = [pet_label]
 
     # Replace None with the results_dic dictionary that you created with this
     # function

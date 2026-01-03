@@ -1,0 +1,10 @@
+
+## Statistics for Model VGG ##
+Number of Images:  4  Number of Dog Images:  2  Number of Not-Dog Images:  2
+Percentage Correct Dogs: 100.0  Percentage Correct Not-Dogs: 100.0  Percentage Correct Breed:  50.0
+Percentage Match (Dog & Non-Dog):  50.0
+
+INCORRECT Dog Breed Classifications:
+Real:                      corgi   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:0
