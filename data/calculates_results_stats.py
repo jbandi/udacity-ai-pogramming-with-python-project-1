@@ -73,6 +73,11 @@ def calculates_results_stats(results_dic):
 
     results_stats_dic = dict()
 
+    # print("--- Calculate Results Details:")
+    # for key in results_dic:
+    #     print("Filename: {}   Values: {}".format(key, results_dic[key]))
+
+
     results_stats_dic['n_images'] = len(results_dic)
     results_stats_dic['n_dogs_img'] = sum([1 for result in results_dic.values() if result[3] == 1])
     results_stats_dic['n_notdogs_img'] = len(results_dic) - results_stats_dic['n_dogs_img']
