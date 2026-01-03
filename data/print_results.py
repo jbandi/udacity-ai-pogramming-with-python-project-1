@@ -61,6 +61,39 @@ def print_results(results_dic, results_stats_dic, model,
                               False doesn't print anything(default) (bool) 
     Returns:
            None - simply printing results.
-    """    
+    """
+
+    print("\n## Statistics for Model {} ##".format(model.upper()))
+
+    # print("Details:")
+    # for key in results_dic:
+    #     print("Filename: {}   Values: {}".format(key, results_dic[key]))
+
+    print("Number of Images: {:2d}  Number of Dog Images: {:2d}  Number of Not-Dog Images: {:2d}".format(
+        results_stats_dic['n_images'], results_stats_dic['n_dogs_img'],
+        results_stats_dic['n_notdogs_img']))
+    print("Percentage Correct Dogs: {:5.1f}  Percentage Correct Not-Dogs: {:5.1f}  Percentage Correct Breed: {:5.1f}".format(
+        results_stats_dic['pct_correct_dogs'], results_stats_dic['pct_correct_notdogs'],
+        results_stats_dic['pct_correct_breed']))
+    print("Percentage Match (Doh & Non-Dog): {:5.1f}".format(results_stats_dic['pct_match']))
+
+    if print_incorrect_dogs and (results_stats_dic['pct_correct_dogs'] != 100.0 or results_stats_dic['pct_correct_notdogs'] != 100.0):
+        print("\nINCORRECT Dog Classifications:")
+        for key in results_dic:
+            if results_dic[key][2] == 0:
+                print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+
+    if print_incorrect_breed and (results_stats_dic['pct_correct_breed'] != 100.0):
+        print("\nINCORRECT Dog Breed Classifications:")
+        for key in results_dic:
+            if results_dic[key][2] == 0 and results_dic[key][3] == 1:
+                print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+
+    # print("\nINCORRECT Classsifications (Dog & Non-Dog)")
+    # for key in results_dic:
+    #     if results_dic[key][2] == 0:
+    #         print("Real: {:>26}   Classifier: {:>30}".format(results_dic[key][0], results_dic[key][1]))
+
+
     None
                 
