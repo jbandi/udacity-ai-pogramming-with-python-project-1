@@ -1,0 +1,11 @@
+
+## Statistics for Model VGG ##
+Number of Images: 40  Number of Dog Images: 30  Number of Not-Dog Images: 10
+Percentage Correct Dogs: 100.0  Percentage Correct Not-Dogs: 100.0  Percentage Correct Breed:  93.3
+Percentage Match (Doh & Non-Dog):  87.5
+
+INCORRECT Dog Breed Classifications:
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+Real:             great pyrenees   Classifier:                         kuvasz
+
+** Total Elapsed Runtime: 0:0:1
