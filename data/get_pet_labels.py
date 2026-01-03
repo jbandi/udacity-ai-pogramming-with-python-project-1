@@ -53,7 +53,6 @@ def get_pet_labels(image_dir):
             word_list_pet_image = low_pet_image.split("_")
             pet_label = " ".join([word for word in word_list_pet_image if word.isalpha()])
 
-            print(pet_label)
             results_dic[pet_image] = [pet_label]
 
     # Replace None with the results_dic dictionary that you created with this
